@@ -5,8 +5,8 @@
 	<artifactId>gymsuedoise-booker</artifactId>
 	<version>0.0.2-SNAPSHOT</version>
 	<properties>
-		<maven.compiler.source>1.6</maven.compiler.source>
-		<maven.compiler.target>1.6</maven.compiler.target>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
 	<scm>
 		<connection>scm:git:https://github.com/sdevineau/gymsuedoise-booker.git</connection>
