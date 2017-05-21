@@ -116,19 +116,6 @@ public class CourseBooker implements Job {
 		}
 	}
 
-	// public WebElement getBookingButton() throws CourseException {
-	// if (!driver.getCurrentUrl().equals(course.getExpandedBookingUrl())) {
-	// driver.get(course.getExpandedBookingUrl());
-	// }
-	// try {
-	// return driver.findElement(
-	// By.cssSelector("#main-content > article > form > div >
-	// input.order-btn[name=\"resabk_next\"]"));
-	// } catch (NoSuchElementException e) {
-	// throw new CourseException("Could not find booking button.", e);
-	// }
-	// }
-
 	private void exitProgram() {
 		LOGGER.debug("Closing the web driver");
 		driver.quit();

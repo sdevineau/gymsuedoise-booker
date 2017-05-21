@@ -28,14 +28,14 @@ public class CourseBookerTest {
 	}
 
 	@Before
-	public void init(){
+	public void init() {
 		String id = "testId";
 		User user = new User("Marine", "marine.arnaud85@gmail.com", "Mouti1012");
 		Course course = new Course(ConfLoader.DEFAULT_BOOKING_COURSE_URL, id);
 		courseRegister = new CourseBooker(driver, course, user);
 		courseRegister.getHomePageElement();
 	}
-	
+
 	@AfterClass
 	public static void tearDown() {
 		driver.close();
@@ -54,8 +54,6 @@ public class CourseBookerTest {
 	public void z2_should_be_logged() throws CourseException {
 		Assert.assertTrue(courseRegister.isLoggedIn());
 	}
-
-
 
 	@Test
 	public void should_get_email_login_field() throws CourseException {
@@ -76,29 +74,22 @@ public class CourseBookerTest {
 
 	@Test
 	public void should_get_suitable_course_url() {
-		String expected = ConfLoader.DEFAULT_BOOKING_COURSE_URL+ "testId";
+		String expected = ConfLoader.DEFAULT_BOOKING_COURSE_URL + "testId";
 		Assert.assertEquals(expected, courseRegister.getCourse().getExpandedBookingUrl());
 	}
-	
-	@Test(expected=CourseException.class)
-	public void course_should_not_exist() throws CourseException{
+
+	@Test(expected = CourseException.class)
+	public void course_should_not_exist() throws CourseException {
 		Assert.assertFalse(courseRegister.isExistingCourse());
 	}
-	
-	@Test(expected=CourseException.class)
-	public void z3_course_should_exist() throws CourseException{
+
+	@Test(expected = CourseException.class)
+	public void z3_course_should_exist() throws CourseException {
 		courseRegister.getCourse().setId("365984");
 		Assert.assertFalse(courseRegister.isExistingCourse());
 	}
 
-//	@Test(expected=CourseException.class)
-//	public void should_no_get_booking_button() throws CourseException {
-//		Assert.assertNotNull(courseRegister.getBookingButton());
-//	}
-
-
-
-	@Test(expected=CourseException.class)
+	@Test(expected = CourseException.class)
 	public void should_be_booked() throws CourseException {
 		Assert.assertFalse(courseRegister.isBooked());
 	}
