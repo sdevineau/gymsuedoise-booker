@@ -8,6 +8,10 @@
 		<maven.compiler.source>1.6</maven.compiler.source>
 		<maven.compiler.target>1.6</maven.compiler.target>
 	</properties>
+	<scm>
+		<connection>scm:git:https://github.com/sdevineau/gymsuedoise-booker.git</connection>
+		<developerConnection>scm:git:https://github.com/sdevineau/gymsuedoise-booker.git</developerConnection>
+	</scm>
 	<dependencies>
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
