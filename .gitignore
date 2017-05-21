@@ -1,0 +1,7 @@
+.classpath
+.project
+.settings/
+configuration.properties
+gymsuedoise-booker.log
+selenium/
+target/
