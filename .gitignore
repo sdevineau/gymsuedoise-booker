@@ -1,7 +1,10 @@
 .classpath
 .project
 .settings/
-configuration.properties
+/configuration.properties
 gymsuedoise-booker.log
 selenium/
 target/
+/*.properties
+/*.log
+/*.releaseBackup
