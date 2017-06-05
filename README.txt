@@ -6,4 +6,4 @@ In order to run properly, this program needs :
 To run the program, 
 - File with proper values the file 'configuration.properties' located at the same location than this file.
 - Right click on the file book-course.sh
-- Click Open with and select Terminal (located in the Utilities folder)
+- Click Open with and select Terminal (located in the /Applications/Utilities folder or /Applications/Utilitaires in French)

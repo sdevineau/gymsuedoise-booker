@@ -54,7 +54,6 @@ public class Main {
 			LOGGER.info("Starts the scheduler");
 			// start the scheduler
 			scheduler.start();
-			LOGGER.info("Ends the scheduler");
 
 		} catch (CourseException e) {
 			LOGGER.error("Could not run program. See message below for more details.");
