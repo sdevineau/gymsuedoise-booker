@@ -1,4 +1,4 @@
-This program is used to book automatically a course on https://www.gymsuedoise.com.
+This program is used to book automatically a course on https://www.swedishfit.fr/.
 In order to run properly, this program needs :
 - Chrome installed on the computer with a version above 57
 - a configuration file called 'configuration.properties'. You have an example with instructions at the same location than this file.
